@@ -19,5 +19,4 @@ public class Day1 {
 		EdgeDriver driver=new EdgeDriver();
 		driver.get("https://github.com/pradeeptaware6269/Selenium274/blob/main/src/test/java/com/tka/jbk/crm_1/Selenium_Script/Day1.javal");
 	}
-
 }
