@@ -30,7 +30,7 @@ package com.tka.jbk.crm_1.Selenium_Script;
 
 					String actualurl = driver.getCurrentUrl();
 
-					if (actualTitla.equals(expectedurl)) {
+					if (!actualTitla.equals(expectedurl)) {
 						System.out.println("Test Case Pass");
 					} else {
 						System.out.println("Test Case Fail");

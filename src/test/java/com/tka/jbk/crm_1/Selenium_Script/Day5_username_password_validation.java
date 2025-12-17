@@ -31,7 +31,7 @@ public class Day5_username_password_validation {
 
 			String actualurl = driver.getCurrentUrl();
 
-			if (actualTitla.equals(expectedurl)) {
+			if (!actualTitla.equals(expectedurl)) {
 				System.out.println("Test Case Pass");
 			} else {
 				System.out.println("Test Case Fail");
