@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day5_username_password_validation {
 
-	// Here we are Passing the valide Mobile Number & Password
+// Here we are Passing the valide Mobile Number & Password
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.instagram.com/");

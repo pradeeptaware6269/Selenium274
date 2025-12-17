@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day5_Usiing_Email_Password {
-	// Here we are Passing the valide Email Address & Password
+// Here we are Passing the valide Email Address & Password
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.instagram.com/");

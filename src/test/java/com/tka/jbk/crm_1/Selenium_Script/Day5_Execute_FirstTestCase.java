@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  Test Scenario :
 1. To validate that the login page accepts only valid credentials.
 2. To validate the login page by passing invalid username and password credentials.
-3.To validate the login page by submitting empty username and password fields.
+3. To validate the login page by submitting empty username and password fields.
 4. To validate the login page by submitting only the username and leaving the password field empty.
 5. To validate the login page by submitting only the password and leaving the username field empty.
 
