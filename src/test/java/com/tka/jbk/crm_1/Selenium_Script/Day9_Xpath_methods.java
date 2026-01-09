@@ -39,5 +39,19 @@ public class Day9_Xpath_methods {
 		WebElement searchButton = driver
 				.findElement(By.xpath("//input[@class='wikipedia-search-button' or @type='submit']"));
 		searchButton.click();
+
+		// Using the xpath parent child
+		WebElement youtubeLink = driver.findElement(By.xpath("//div[@class='widget-content']/a"));
+
+		String text = youtubeLink.getText();
+		System.out.println(text);
+
+		// Using the xpath child Parent
+		WebElement parentDiv = driver.findElement(By.xpath("//a[text()='Youtube']/parent::div"));
+
+		System.out.println(parentDiv.getAttribute("class"));
+		
+		driver.quit();
+
 	}
 }
