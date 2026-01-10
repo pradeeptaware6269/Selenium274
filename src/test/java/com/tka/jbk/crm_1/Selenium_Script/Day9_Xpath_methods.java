@@ -30,6 +30,9 @@ public class Day9_Xpath_methods {
 
 		// ends-with() is NOT supported in Selenium XPath 1.0
 
+		// using the text method
+		System.out.println(driver.findElement(By.xpath("//a[text()='Youtube']")).getText());
+
 		// using multiple attributes with AND
 		WebElement search = driver.findElement(
 				By.xpath("//input[@class='wikipedia-search-input' and @id='Wikipedia1_wikipedia-search-input']"));
@@ -50,7 +53,7 @@ public class Day9_Xpath_methods {
 		WebElement parentDiv = driver.findElement(By.xpath("//a[text()='Youtube']/parent::div"));
 
 		System.out.println(parentDiv.getAttribute("class"));
-		
+
 		driver.quit();
 
 	}
