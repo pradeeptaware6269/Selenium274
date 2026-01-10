@@ -13,6 +13,7 @@ public class Day9_Xpath_methods {
 		driver.manage().window().maximize();
 
 		// Relative XPath
+		
 		WebElement firstname = driver.findElement(By.xpath("//input[@id='name']"));
 		firstname.sendKeys("Pradeep");
 
