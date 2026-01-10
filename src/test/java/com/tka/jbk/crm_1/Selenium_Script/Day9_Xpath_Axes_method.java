@@ -10,6 +10,7 @@ public class Day9_Xpath_Axes_method {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://testautomationpractice.blogspot.com/");
+        
         driver.manage().window().maximize();
 
         // Name
