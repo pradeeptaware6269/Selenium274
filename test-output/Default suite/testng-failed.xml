@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.Day13_0_validation_testcase">
+      <class name="com.TestNG.Day15_1_isSelected">
         <methods>
-          <include name="title_validation"/>
-          <include name="url_validation"/>
-          <include name="heading_validation"/>
+          <include name="register"/>
         </methods>
-      </class> <!-- com.TestNG.Day13_0_validation_testcase -->
+      </class> <!-- com.TestNG.Day15_1_isSelected -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

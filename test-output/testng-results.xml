@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-15T21:05:16 IST" name="Default suite" finished-at="2026-01-15T21:05:24 IST" duration-ms="8246">
+  <suite started-at="2026-01-15T23:23:17 IST" name="Default suite" finished-at="2026-01-15T23:23:21 IST" duration-ms="4049">
     <groups>
     </groups>
-    <test started-at="2026-01-15T21:05:16 IST" name="Default test" finished-at="2026-01-15T21:05:24 IST" duration-ms="8246">
-      <class name="com.TestNG.Day14_1_TestCaseValidation">
-        <test-method signature="testcase()[pri:0, instance:com.TestNG.Day14_1_TestCaseValidation@411f53a0]" started-at="2026-01-15T21:05:16 IST" name="testcase" finished-at="2026-01-15T21:05:24 IST" duration-ms="8188" status="PASS">
+    <test started-at="2026-01-15T23:23:17 IST" name="Default test" finished-at="2026-01-15T23:23:21 IST" duration-ms="4049">
+      <class name="com.TestNG.Day15_2_getPageSource">
+        <test-method signature="register()[pri:0, instance:com.TestNG.Day15_2_getPageSource@411f53a0]" started-at="2026-01-15T23:23:17 IST" name="register" finished-at="2026-01-15T23:23:21 IST" duration-ms="4008" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase -->
-      </class> <!-- com.TestNG.Day14_1_TestCaseValidation -->
+        </test-method> <!-- register -->
+      </class> <!-- com.TestNG.Day15_2_getPageSource -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
