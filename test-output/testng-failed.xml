@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.Day18_2Practice">
+      <class name="com.TestNG.Day19_0_Alert">
         <methods>
-          <include name="test1"/>
-          <include name="end"/>
-          <include name="precise"/>
+          <include name="setup"/>
+          <include name="alertWithTextbox"/>
+          <include name="alertWithOkAndCancel"/>
+          <include name="tearDown"/>
+          <include name="alertWithOk"/>
         </methods>
-      </class> <!-- com.TestNG.Day18_2Practice -->
+      </class> <!-- com.TestNG.Day19_0_Alert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
