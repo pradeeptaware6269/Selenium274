@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.Day18_window">
+      <class name="com.TestNG.Day18_1Practice">
         <methods>
           <include name="precise"/>
-          <include name="window_test"/>
+          <include name="test"/>
+          <include name="end"/>
         </methods>
-      </class> <!-- com.TestNG.Day18_window -->
+      </class> <!-- com.TestNG.Day18_1Practice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
