@@ -17,7 +17,7 @@ public class Day20_1_Action {
 	public void before() {
 		driver = new ChromeDriver();
 		driver.get("https://demo.automationtesting.in/Register.html");
-		ac = new Actions(driver); // ✅ Correct place
+		ac = new Actions(driver);
 	}
 
 	@Test
