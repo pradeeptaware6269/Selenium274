@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.Day20_2_Keyboard_Practice">
+      <class name="com.TestNG.Day21_1_Task1">
         <methods>
-          <include name="after"/>
-          <include name="before"/>
-          <include name="test2"/>
+          <include name="test"/>
+          <include name="start"/>
+          <include name="end"/>
         </methods>
-      </class> <!-- com.TestNG.Day20_2_Keyboard_Practice -->
+      </class> <!-- com.TestNG.Day21_1_Task1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
