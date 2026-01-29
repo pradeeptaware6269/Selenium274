@@ -22,28 +22,51 @@ public class Day22_1_waits {
 	@BeforeMethod
 	public void before() {
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
 	}
 
-	@Test
-	public void test() {
+	// ---------- Explicit Wait (WebDriverWait) ----------
+	@Test(priority = 1)
+	public void explicitWaitTest() {
 
-		WebElement btn1 = driver.findElement(By.id("btn1"));
-		btn1.click();
+		driver.findElement(By.id("btn1")).click();
 
-		// Explicit Wait
-		//WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		//WebElement firstText = explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("txt1")));
-		//firstText.sendKeys("---- Welcome -----");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement text1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("txt1")));
 
-		// Fluent Wait
-		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofSeconds(15))
-				.pollingEvery(Duration.ofSeconds(4))
-				.ignoring(NoSuchElementException.class);
+		text1.sendKeys("---- Explicit Wait ----");
+	}
 
-		WebElement secondText = fluentWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("txt2")));
-		secondText.sendKeys("---- Fluent Wait -----");
+	// ---------- Implicit Wait ----------
+	@Test(priority = 2)
+	public void implicitWaitTest() {
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+		driver.findElement(By.id("btn1")).click();
+		driver.findElement(By.id("btn2")).click();
+
+		driver.findElement(By.id("txt1")).sendKeys("Pradeep");
+		driver.findElement(By.id("txt2")).sendKeys("Taware");
+	}
+
+	// ---------- Fluent Wait ----------
+	@Test(priority = 3)
+	public void fluentWaitTest() {
+
+		driver.findElement(By.id("btn1")).click();
+
+		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(15))
+				.pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
+
+		WebElement text2 = fluentWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("txt2")));
+
+		WebElement text1 = (WebElement) fluentWait
+				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("txt1")));
+
+		text1.sendKeys("Pradeep");
+		text2.sendKeys("Taware");
 	}
 
 	@AfterMethod
